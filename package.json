@@ -1,0 +1,8 @@
+{
+  "name": "royal-beauty",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Loja Royal Beauty — Sua beleza, sua realeza.",
+  "engines": { "node": ">=18" },
+  "scripts": { "dev": "node dev.js", "start": "node dev.js" }
+}

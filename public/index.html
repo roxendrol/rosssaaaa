@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Royal Beauty 👑 — Sua beleza, sua realeza</title>
+<meta name="description" content="Royal Beauty: gloss, maquiagem, skincare, perfumaria, kits para presentear e acessórios de beleza. Porto Alegre – RS.">
+<meta name="theme-color" content="#f58ab8">
+<meta property="og:title" content="Royal Beauty 👑 — Sua beleza, sua realeza">
+<meta property="og:description" content="Gloss, skincare, perfumaria, kits para presentear e acessórios de beleza.">
+<meta property="og:image" content="/logo.jpg">
+<link rel="icon" href="/icon.png">
+<link rel="apple-touch-icon" href="/icon.png">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="hdr"></div>
+<main>
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div>
+        <span class="kicker">✨ Porto Alegre – RS ✨</span>
+        <h1>Royal Beauty <span class="script">Sua beleza, sua realeza 👑</span></h1>
+        <p class="lead">Gloss, skincare, perfumaria, kits para presentear e acessórios de beleza — escolhidos com muito carinho para realçar o seu brilho. 💖</p>
+        <div class="cta">
+          <a class="btn white" href="#produtos">Ver produtos 🎀</a>
+          <a class="btn wa" id="heroWa" href="#" target="_blank" rel="noopener"><span data-ic="wa"></span> Chamar no WhatsApp</a>
+        </div>
+      </div>
+      <div class="stage" id="stage" aria-hidden="true">
+        <div class="stage-in">
+          <div class="coin"><div class="face"><img src="/logo.jpg" alt="" width="340" height="340"></div><div class="face back"><img src="/logo.jpg" alt="" width="340" height="340"></div></div>
+          <span class="orb o1">💖</span><span class="orb o2">🎀</span><span class="orb o3">✨</span><span class="orb o4">👑</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="categorias">
+    <div class="wrap">
+      <div class="sec-head rv"><h2>Escolha sua categoria 💕</h2><p>Toque em uma para ver os mimos</p></div>
+      <div class="cats rv" id="cats" role="tablist" aria-label="Categorias"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="produtos">
+    <div class="wrap">
+      <div class="tools rv">
+        <label class="sr" for="q">Buscar produto</label>
+        <input id="q" type="search" placeholder="🔍 Buscar produto…" autocomplete="off" maxlength="60">
+        <label class="sr" for="sort">Ordenar</label>
+        <select id="sort"><option value="">Ordem da loja</option><option value="asc">Menor preço</option><option value="desc">Maior preço</option></select>
+      </div>
+      <div class="count" id="count" aria-live="polite"></div>
+      <div class="grid" id="grid"><div class="empty" style="grid-column:1/-1"><div data-mascot></div><h3>Carregando mimos…</h3></div></div>
+    </div>
+  </section>
+
+  <section class="sec steps-wrap" id="como-comprar">
+    <div class="wrap">
+      <div class="sec-head rv"><h2>Como comprar 🛍️</h2><p>É simples, rápido e cheio de carinho</p></div>
+      <div class="steps">
+        <div class="step rv"><div class="n">1</div><h3>Escolha seu produto</h3><p>Navegue pelas categorias e encontre o seu mimo favorito.</p></div>
+        <div class="step rv"><div class="n">2</div><h3>Chame no WhatsApp</h3><p>Toque em “Quero este” e a conversa já abre com o produto.</p></div>
+        <div class="step rv"><div class="n">3</div><h3>Combine a entrega</h3><p>O frete é por conta do cliente e o valor é informado antes de confirmar a compra.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Detalhes do produto">
+  <div class="sheet"><button class="close" id="mclose" aria-label="Fechar">✕</button>
+    <div class="big"><img id="mimg" alt="" width="600" height="750"></div>
+    <div class="info"><span class="kicker" id="mcat" style="align-self:flex-start"></span><h3 id="mtitle"></h3><div class="price" id="mprice"></div><p id="mdesc"></p>
+      <div class="acts"><a class="btn wa" id="mwa" target="_blank" rel="noopener"></a><a class="btn ig" id="mig" target="_blank" rel="noopener"></a></div></div>
+  </div>
+</div>
+<div id="ftr"></div>
+<script src="/js/common.js"></script>
+<script src="/js/store.js"></script>
+</body>
+</html>
